@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Review extends Model {}
 
-Comment.init(
+Review.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -40,7 +40,7 @@ Comment.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'comment'
+    modelName: 'review'
   });
 
   module.exports = Review;
