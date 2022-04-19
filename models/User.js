@@ -16,6 +16,10 @@ User.init(
       autoIncrement: true,
       primaryKey: true
     },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     firstName: {
       type: DataTypes.STRING
     },
@@ -33,10 +37,6 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    isAdmin: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false
     }
   }, {
     sequelize,
